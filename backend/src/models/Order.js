@@ -9,6 +9,7 @@ const orderSchema = new mongoose.Schema({
       quantity: Number,
     },
   ],
+  status: {type: String , required: true, default:"pending"},
   totalPrice: { type: Number, required: true },
   orderDate: { type: Date, default: Date.now },
 });

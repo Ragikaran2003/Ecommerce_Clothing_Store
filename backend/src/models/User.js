@@ -20,6 +20,11 @@ const userSchema = new mongoose.Schema({
       required: true,
       min: 1,
     },
+    isLogined: {
+      type: Number,
+      required: true,
+      default:0,
+    }
   },
 ],
 
